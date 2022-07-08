@@ -1,0 +1,151 @@
+
+
+:root{
+	--bs-violet: #745C8B;
+	--bs-violet2: #9B5CCA;
+	--bs-turquoise: #62BAB8;
+	--bs-yellow: #E4AD6B;
+	--bs-orange: #C4772D;
+}
+
+body::-webkit-scrollbar {
+  	width: 10px;              
+}
+body::-webkit-scrollbar-track {
+  	background: #E5E5Ec;        
+}
+body::-webkit-scrollbar-thumb {
+	background-color: var(--bs-violet);    
+	border-radius: 20px;       
+  	border: 3px solid #FFF;  
+}
+
+
+.single-page{
+	height: 1000px;
+}
+header ul{
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	padding-top: 20px;
+	justify-content: space-around;
+}
+header ul div{
+	display: flex;
+}
+header div li{
+	margin: 20px;
+}
+header div li a{
+	font-weight: bold;
+	text-decoration:none;
+	display: inline-block;
+	line-height: 1;
+}
+header div li a:hover{
+	color: var(--bs-violet2);
+}
+header div li a:after{
+	display: block;
+	content: "";
+	margin-top: 5px;
+	height: 2px;
+	width: 0%;
+	background-color: var(--bs-violet2);
+	transition: width 0.4s ease-in-out;
+}
+header div li a:hover:after,
+header div li a:focus:after{
+	width: 100%;
+}
+header img{
+	width: 300px;
+}
+.single-img{
+	background-image: url(../img/index/single-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 390px;
+	height: 390px;
+}
+.single-bg{
+	padding-top: 20px;
+}
+.single-title{
+	padding-top: 80px;
+}
+.single-title span{
+	font-size: 20px;
+	font-weight: bold;
+}
+.single-title h1{
+	margin-top: 15px;
+	color: var(--bs-violet2);
+	font-size: 40px;
+	line-height: 35px;
+	font-weight: bold;
+}
+.single-title p{
+	margin-top: 20px;
+	font-size: 18px;
+	line-height: 25px;
+}
+.serv-icons-list{
+	margin-bottom: 85px;
+}
+.serv-icon{
+	background-color: #F2F2F4;
+	border-radius: 20px;
+	padding: 10px 20px;
+	margin-top: 10px;
+	display: flex;
+	font-weight: bold;
+}
+.serv-icon ul{
+	list-style: none;
+	margin-top: 10px;
+}
+.serv-icon a{
+	color: #000;
+	font-size: 14px;
+}
+.serv-icon img{
+	width: 60px;
+	height: 60px;
+	margin-top: 7px;
+}
+.trial-session-btn{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: #FFF;
+	font-size: 19px;
+	background-color: var(--bs-violet2);
+	border-radius: 10px;
+	padding: 18px 24px;
+}
+.services-blocks{
+	margin-top: -281px !important;
+}
+.services-blocks h1{
+	margin-bottom: 30px;
+}
+.services-blocks-list{
+	display: flex;
+}
+.service-block{
+	color: #FFF;
+	background: var(--bs-turquoise);
+	border-radius: 30px;
+	height: 220px;
+	width: 25%;
+	padding: 10px 20px;
+}
+.service-block:not(:first-child){
+	margin-left: 50px;
+}
+.service-block h2{
+	font-size: 20px;
+}
