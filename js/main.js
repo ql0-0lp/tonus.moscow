@@ -76,3 +76,14 @@ function noABC(event) {
   if ("qwertyuiopasdfghjklzxcvbnmйцукенгшщзхъфывапролджэячсмитьбюё-/.,?<>|!#@^:;()".indexOf(event.key) != -1)
     event.preventDefault();
 };
+
+const pageHeight = document.documentElement.scrollHeight
+
+$bg = $('#bg');
+$bg.css('height', pageHeight); 
+
+$st = $('#single-title');
+$st.css('margin-top', pageHeight/5);
+
+$ct = $('#citat');
+$ct.css('margin-top', pageHeight/10);

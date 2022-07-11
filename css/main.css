@@ -1,4 +1,22 @@
+@font-face {
+  font-family: "Cocomat";
+  font-style: normal;
 
+  src: local("Cocomat"),
+       url("../fonts/Cocomat.woff2") format("woff2"),
+       url("../fonts/Cocomat.woff") format("woff"),
+       url("../fonts/Cocomat.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Cocomat Bold";
+  font-style: normal;
+  font-weight: bold;
+
+  src: local("Cocomat Bold"),
+       url("../fonts/Cocomat-Bold.woff2") format("woff2"),
+       url("../fonts/Cocomat-Bold.woff") format("woff"),
+       url("../fonts/Cocomat-Bold.ttf") format("ttf");
+}
 
 :root{
 	--bs-violet: #745C8B;
@@ -22,14 +40,20 @@ body::-webkit-scrollbar-thumb {
 
 
 .single-page{
-	height: 1000px;
+	background-image: url(../img/index/bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+.bg{
 }
 header ul{
+	background-color: #F2F2F4;
 	display: flex;
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	padding-top: 20px;
+	padding: 8px 0 8px;
 	justify-content: space-around;
 }
 header ul div{
@@ -63,7 +87,7 @@ header div li a:focus:after{
 header img{
 	width: 300px;
 }
-.single-img{
+/*.single-img{
 	background-image: url(../img/index/single-bg.png);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -91,6 +115,45 @@ header img{
 	margin-top: 20px;
 	font-size: 18px;
 	line-height: 25px;
+}*/
+.single-title{
+	text-align: center;
+	font-family: Cocomat Bold;
+	text-transform: uppercase;
+}
+.single-title h1{
+	margin: 20px 0;
+	font-size: 60px;
+	line-height: 60px;
+	font-weight: bold;
+}
+.single-title span{
+	color: var(--bs-turquoise);
+}
+.single-title span:first-child{
+	font-size: 18px;
+}
+.citat{
+	font-family: Cocomat;
+	position: absolute;
+	right: 20%;
+	color: #000;
+}
+.citat span{
+	font-size: 40px;
+}
+.citat p{
+	font-size: 20px;
+}
+.citat font{
+	margin-left: 20px;
+}
+.contacts{
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	color: black;
+	font-weight: bold;
 }
 .serv-icons-list{
 	margin-bottom: 85px;
