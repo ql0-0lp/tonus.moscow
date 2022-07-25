@@ -5,123 +5,65 @@
 		<meta name="keywords" content="">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;600;900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/main.css" />
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 	</head>
 	<body>
-		<section id="bg" class="single-page">
+		<!-- <div class="preloader">
+    		<h2 class="animate">Загрузка..</h2>
+		</div> -->
+		<section class="single-page">
 			<header>
 				<nav>
-					<ul>
+					<ul class="pc-menu">
 						<div>
-							<li><a href="">Smart - тренировки</a></li>
-							<li><a href="">LPG - массаж</a></li>
+							<li><a href="">Услуги</a></li>
+							<li><a href="">О студии</a></li>
 						</div>
 						<img src="img/icons/logo.png">
 						<div>
-						<li><a href="">EMS - тренировки</a></li>
-							<li><a href="">Resolady - массаж</a></li>
+							<li><a href="">Отзывы</a></li>
+							<li><a href="">Контакты</a></li>
 						</div>
 					</ul>
+					<div class="mobile-menu">
+						<img src="img/icons/logo.png">
+						<div id="nav-icon6">
+						    <span></span>
+						</div> 
+						<div id="menu-list" class="menu-list">
+							<ul>
+								<li><a href="">Услуги</a></li> 
+								<li><a href="">О студии</a></li> 
+								<li><a href="">Отзывы</a></li> 
+								<li><a href="">Контакты</a></li>
+							</ul>
+						</div> 
+					</div>
 				</nav>
 			</header>
-			<div class="container">
-				<div class="center">
-					<div id="single-title" class="single-title">
-						<span>спортивно оздоровительный</span>
-						<h1>женский <br>центр</h1>
-						<span>красоты и здоровья</span>
-					</div>
+			<div class="container center">
+				<div class="single-title">
+					<span>спортивно оздоровительный</span>
+					<h1>женский <br>центр</h1>
+					<span>красоты и здоровья</span>
 				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div id="citat" class="citat">
-							<span>"</span>
-							<p>Со специальными<br><font>умными тренажерами</font></p>
-						</div>
-					</div>
-					<div class="col-md-12">
-						<div class="contacts">
-							<p>Мы работаем:</p>
-							<p>Пн-Пт: 8:00-21:00</p>
-							<p>Сб, Вс: 9:00-19:00</p>
-						</div>
-					</div>
-					<!-- <div class="col-md-4 serv-icons-block">
-						<div class="serv-icons-list">
-							<div class="serv-icon">
-								<img src="img/icons/scale.png">
-								<ul>
-									<li><a href="">ИЗБАВЛЕНИЕ ОТ ЛИШНЕГО ВЕСА</a></li>
-									<li><a href="">КОРРЕКЦИЯ ФИГУРЫ</a></li>
-								</ul>
-							</div>
-							<div class="serv-icon">
-								<img src="img/icons/dress2.png">
-								<ul>
-									<li><a href="">УСТРАНЕНИЕ ЦЕЛЛЮЛИТА</a></li>
-									<li><a href="">РАССЛАБЛЕНИЕ И СНЯТИЕ СТРЕССА</a></li>
-								</ul>
-							</div>
-							<div class="serv-icon">
-								<img src="img/icons/baby.png">
-								<ul>
-									<li><a href="">СОХРАНЕНИЕ МОЛОДОСТИ И ТОНУСА</a></li>
-									<li><a href="">ВОССТАНОВЛЕНИЕ ПОСЛЕ РОДОВ</a></li>
-								</ul>
-							</div>
-							<div class="serv-icon">
-								<img src="img/icons/hearts.png">
-								<ul>
-									<li><a href="">ПРОФИЛАКТИКА ВАРИКОЗА</a></li>
-									<li><a href="">СНЯТИЕ ОТЕЧНОСТИ</a></li>
-								</ul>
-							</div>
-						</div>
-						<a class="trial-session-btn" href="#">Записаться на пробное занятие</a>
-					</div> -->
-					<!-- <div class="col-md-8 services-blocks">
-						<h1>Наши услуги</h1>
-						<div class="services-blocks-list">
-							<div class="service-block">
-								<h2>Смарт - тренировки</h2>
-								<p>Персональным инструктор</p>
-								<div class="bottom">
-									<p></p>
-									<a href=""></a>
-								</div>
-							</div>
-							<div class="service-block">
-								<h2>EMS тренировки</h2>
-								<p>40 минут = 4 часа в зале</p>
-								<div class="bottom">
-									<p></p>
-									<a href=""></a>
-								</div>
-							</div>
-							<div class="service-block">
-								<h2>LPG - массаж</h2>
-								<p>Разрушения целлюлита</p>
-								<div class="bottom">
-									<p></p>
-									<a href=""></a>
-								</div>
-							</div>
-							<div class="service-block">
-								<h2>Starvac - массаж</h2>
-								<p>Выведение токсинов</p>
-								<div class="bottom">
-									<p></p>
-									<a href=""></a>
-								</div>
-							</div>
-						</div>
-					</div> -->
+				<div class="citat">
+					<!-- <span><img src="img/icons/quotation-mark.png"></span> -->
+					<p><font>со специальными «умными» тренажерами</font><br><font>и комплексом омолаживающих </font><br><font>приятных процедур</font></p>
+				</div>
+				<div class="contacts">
+					<!-- <p>Мы ждем вас:</p>
+					<p>Пн-Пт: 8:00-21:00</p>
+					<p>Сб, Вс: 9:00-19:00</p> -->
 				</div>
 			</div>
 		</section>
-		<section>
+		<!-- <section>
 			<div class="partners">
 				<h2>Мы сотрудничаем с</h2>
 				<div class="row partners-list">
@@ -136,6 +78,132 @@
 					</div>
 				</div>
 			</div>
+		</section> -->
+		<section class="services">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 services-title">
+						<h2>Что мы можем предложить?</h2>
+						<p></p>
+					</div>
+					<div class="col-md-7">
+						<div class="row">
+							<div class="col-md-6">
+								<div style="background-image: url(img/index/smart-tr.jpg);" class="serv-block">
+									<div class="serv-title">
+										<h3>Smart-тренировки</h3>
+										<a onclick="openModal(smart)">Подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div id="smart" class="modal">
+					        	<div class="modal-content">
+					                <span onclick="closeModal(smart)" class="cl">&times;</span>
+									<div class="row no-gutter">
+										<div class="col-md-6 modal-text">
+											<h2>Smart-тренировки</h2>
+											<p>Что входит:</p>
+							              	<ul>
+							              		<li>Инструктор</li>
+							              		<li>Силовые и кардио тренировки</li>
+							              		<li>Антицеллюлитный массаж</li>
+							              		<li>Лимфодренажный массаж</li>
+							              		<li>Оздоровительные процедуры</li>
+							              		<li>Фитобочка и ИК-сауна</li>
+							              		<li>Составление программы тренировок</li>
+							              		<li>Анализ состава тела</li>
+							              	</ul>
+										</div>
+										<div class="col-md-6">
+											
+										</div>
+									</div>
+					            </div>
+					        </div>
+							<div class="col-md-6">
+								<div style="background-image: url(img/index/ems-tr.jpg);" class="serv-block">
+									<div class="serv-title">
+										<h3>EMS-тренировки</h3>
+										<a onclick="openModal(ems)">Подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div id="ems" class="modal">
+					        	<div class="modal-content">
+					                <span onclick="closeModal(ems)" class="cl">&times;</span>
+									<h2>EMS-тренировки</h2>
+					              	<p>Какой-то чудесный текст с фото</p>
+					            </div>
+					        </div>
+							<div class="col-md-6">
+								<div style="background-image: url(img/index/lpg-ms.jpg);" class="serv-block">
+									<div class="serv-title">
+										<h3>LPG-массаж</h3>
+										<a onclick="openModal(lpg)">Подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div id="lpg" class="modal">
+					        	<div class="modal-content">
+					                <span onclick="closeModal(lpg)" class="cl">&times;</span>
+					                <div class="modal-text">
+					                	<h2>LPG-массаж</h2>
+					              		<p>LPG-массаж — это воздействие вращающимися роликами на захваченную вакуумной манипулой жировую складку, благодаря которому удается устранять отечность тканей, разрушать локальные жировые отложения и целлюлит. Вакуумная манипула аппарата для LPG-массажа может перемещаться вправо/влево, вниз/вверх и по диагонали. Поэтому имеется возможность очень точно корректировать все проблемные зоны тела.</p>
+					              		<p>Lpg-массаж называют еще эндермолифтинговым массажем, липомассажем, космеханикой, энермолифтингом. В медицине используется для лечения после хирургического вмешательства, в послеродовый период для восстановления, для уменьшения келлоидных рубцов, для лечения суставов и начального варикоза, от болей в спине. В спорте lpg-массаж также нашел применение как отличный восстанавливающий способ после травмирования и как релаксирующий метод при больших нагрузках.</p>
+					                </div>
+					            </div>
+					        </div>
+							<div class="col-md-6">
+								<div style="background-image: url(img/index/rtx-p.jpg);" class="serv-block">
+									<div class="serv-title">
+										<h3>RTX-петли</h3>
+										<a onclick="openModal(rtx)">Подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div id="rtx" class="modal">
+					        	<div class="modal-content">
+					                <span onclick="closeModal(rtx)" class="cl">&times;</span>
+									<h2>RTX-петли</h2>
+					              	<p>Какой-то чудесный текст с фото</p>
+					            </div>
+					        </div>
+						</div>
+					</div>
+					<div class="col-md-5 serv-icons-block">
+						<div class="serv-icons-list">
+							<div class="serv-icon">
+								<img src="img/icons/scale.png">
+								<ul>
+									<li>ИЗБАВЛЕНИЕ ОТ ЛИШНЕГО ВЕСА</li>
+									<li>КОРРЕКЦИЯ ФИГУРЫ</li>
+								</ul>
+							</div>
+							<div class="serv-icon">
+								<img src="img/icons/dress2.png">
+								<ul>
+									<li>УСТРАНЕНИЕ ЦЕЛЛЮЛИТА</li>
+									<li>РАССЛАБЛЕНИЕ И СНЯТИЕ СТРЕССА</li>
+								</ul>
+							</div>
+							<div class="serv-icon">
+								<img src="img/icons/baby.png">
+								<ul>
+									<li>СОХРАНЕНИЕ МОЛОДОСТИ <font>И ТОНУСА</font></li>
+									<li>ВОССТАНОВЛЕНИЕ ПОСЛЕ РОДОВ</li>
+								</ul>
+							</div>
+							<div class="serv-icon">
+								<img src="img/icons/hearts.png">
+								<ul>
+									<li>ПРОФИЛАКТИКА ВАРИКОЗА</li>
+									<li>СНЯТИЕ ОТЕЧНОСТИ</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 		<section class="trial-training">
 			<div class="container">
@@ -146,8 +214,8 @@
 								<div class="col-md-1"></div>
 								<div class="col-md-3">
 									<div class="trial-training-title">
-										<span>Стоимость: 500 руб.</span>
-										<h2>Пробная тренировка</h2>
+										<span>От 500 руб.</span>
+										<h2>Пробное <font>занятие</font></h2>
 										<form action="#" class="contact-form form">
 						                    <input type="hidden" name="project_name" value="ТонусСтудия">
 						                    <input type="hidden" name="admin_email" value="mail@4e1.ru">
@@ -161,9 +229,11 @@
 						                    </div>
 						                    <div class="form-group">
 						                    	<select type="select" name="Тип тренировки" class="form-control" required >
-						                    		<option value="" disabled selected>Выберите тренировку</option>
-						                    		<option>Smart-тренировка</option>
-						                    		<option>EMS-тренировка</option>
+						                    		<option value="" disabled selected>Выберите услгу</option>
+						                    		<option>Smart-тренировка - 500 руб.</option>
+						                    		<option>EMS-тренировка - стоимость</option>
+						                    		<option>LPG-массаж - стоимость</option>
+						                    		<option>RTX-петли - стоимость</option>
 						                    	</select>
 						                    </div>
 						                    <div class="form-group">
@@ -187,22 +257,112 @@
 			</div>
 		</section>
 
-		<section>
+		<section class="why-us-blocks">
 			<div class="container">
-				<div class="row why-blocks">
-					<div class="col-md-3 arrow arrow-right">
-						
+				<div class="row">
+					<div class="col-md-12 why-us-title">
+						<h2>Почему мы?</h2>
+						<p>Тонус Студия - это клуб инновационного женского фитнеса. Наш клуб специально создан, чтобы девушка, женщина или пожилая дама смогли заняться своей фигурой и здоровьем в комфортной обстановке рядом с домом.</p>
 					</div>
-					<div class="col-md-3"></div>
+					<div class="why-us-list">
+						<div class="row no-gutter why-us-js-list">
+							<div id="arrow-0" class="col-md-3 why-us arrow arrow-right">
+								<div class="why-text">
+									<h5>Хорошая компания</h5>
+									<p>Работаем только с женщинами и понимаем все особенности и тонкости женского организма на 100%.</p>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div style="background-image: url(img/index/why-1.jpg);" class="why-us-img"> </div>
+							</div>
+							<div id="arrow-1" class="col-md-3 why-us arrow arrow-right">
+								<div class="why-text">
+									<h5>Без стеснения</h5>
+									<p>Добродушная семейная атмосфера, позволяющая полностью расслабиться и уделить время для себя</p>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div style="background-image: url(img/index/why-2.jpg);" class="why-us-img"> </div>
+							</div>
+							<div class="col-md-3">
+								<div style="background-image: url(img/index/why-3.jpg);" class="why-us-img"> </div>
+							</div>
+							<div id="arrow-2" class="col-md-3 why-us arrow arrow-left">
+								<div class="why-text">
+									<h5>Мы слушаем вас!</h5>
+									<p>Постоянная обратная связь от клиентов позволяет улучшаться и создавать лучшие фитнес решения для женщин нашего города</p>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div style="background-image: url(img/index/why-4.jpg);" class="why-us-img"> </div>
+							</div>
+							<div id="arrow-3" class="col-md-3 why-us arrow arrow-left">
+								<div class="why-text">
+									<h5>Правильные идеалы</h5>
+									<p>Вы сами выбираете свой ориентир и двигаетесь к нему в комфортном темпе</p>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="last-block">
+		<section class="reviews">
 			<div class="container">
 				<div class="row">
-					<div class="last-block-bg">
-						<h1>Приведи себя в Тонус!</h1>
+					<div class="col-md-3 left">
+						<span>Ваш отзыв важен для нас!</span>
+						<h2>Оставьте отзыв <font>о нашем клубе</font></h2>
+					</div>
+					<div class="col-md-6">
+						<iframe src="https://yandex.ru/maps-reviews-widget/1367480169?comments"></iframe>
+					</div>
+					<div class="col-md-3 right">
+						<h2>Мы слышим пожелания</h2>
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contacts">
+			<div class="container">
+				<div class="row contacts-js">
+					<div class="col-md-6 pc-map contact-map">
+						<iframe src="https://yandex.ru/map-widget/v1/-/CCUNr0UvSD" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+					</div>
+					<div class="col-md-6 ct-l contact-text">
+						<span>Есть вопросы?</span>
+						<h2>Не нашли, <font style="">что искали</font>?</h2>
+						<p>Позвоните нам и задайте интересующие вас вопросы!</p>
+						<div class="contacts-blocks">
+							<div class="contact-block">
+								<p>Наши контакты:</p>
+								<a href="">+7 (965) 261-00-01</a><br>
+								<a href="">+7 (499) 350-12-45</a>
+							</div>
+							<div class="contact-block">
+								<p>Мы работаем:</p>
+								<p>Пн-Пт: 8:00-22:00</p>
+								<p>Сб, Вс: 9:00-19:00</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 mb-map contact-map">
+						<iframe src="https://yandex.ru/map-widget/v1/-/CCUNr0UvSD" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="last-block last-block-bg">
+			<div class="container">
+				<div class="row no-gutter">
+					<div class="centered">
+						<div class="last-block-text">
+							<h1>Приведи себя<br><font>в Тонус</font></h1>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -213,20 +373,18 @@
 				<div class="row">
 					<div class="footer-logo">
 						<img src="img/icons/logo.png">
-						
 					</div>
-					<div>
-							<p></p>
-						<hr>
+					<div class="footer">
+						<p>©<script>document.write(new Date().getFullYear());</script> ТОНУС СТУДИЯ - Мастерская вашего тела</p>
+						<center><hr></center>
 						<ul class="footer-social">
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
+							<li><a href=""><img src="img/icons/vk.png"></a></li>
+							<li><a href=""><img src="img/icons/ok.png"></a></li>
+							<li><a href=""><img src="img/icons/instagram.png"></a></li>
+							<li><a href=""><img src="img/icons/whatsapp.png"></a></li>
+							<li><a href=""><img src="img/icons/telegram.png"></a></li>
 						</ul>
-						</div>
+					</div>
 				</div>
 			</div>
 		</footer>
