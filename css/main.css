@@ -47,7 +47,7 @@ body::-webkit-scrollbar-thumb {
 	vertical-align: middle;
 }
 
-font{
+span{
 	white-space: nowrap;
 }
 
@@ -117,6 +117,10 @@ nav{
 .pc-menu div{
 	display: flex;
 }
+.pc-menu ul{
+	list-style: none;
+	display: flex;
+}
 .pc-menu div li{
 	font-size: 16px;
 	text-transform: uppercase;
@@ -178,6 +182,7 @@ nav{
 #nav-icon6 span {
     height: 4px;
     width: 30px;
+    white-space: normal;
     background-color: var(--bs-violet);
     border-radius: 20px;
     position: absolute;
@@ -186,6 +191,7 @@ nav{
 }
 #nav-icon6 span:before {
     left: 0;
+    white-space: normal;
     position: absolute;
     top: -8px;
     height: 4px;
@@ -198,6 +204,7 @@ nav{
 }
 #nav-icon6 span:after {
     left: 0;
+    white-space: normal;
     position: absolute;
     top: 8px;
     height: 4px;
@@ -209,16 +216,19 @@ nav{
     transition: transform .25s, top .25s .25s;
 }
 #nav-icon6.open span {
+	white-space: normal;
     transition-duration: 0.1s;
     transition-delay: .25s;
     background: transparent;
 }
 #nav-icon6.open span:before {
+	white-space: normal;
     transition: top .25s, transform .25s .25s;
     top: 0px;
     transform: rotateZ(-45deg);
 }
 #nav-icon6.open span:after {
+	white-space: normal;
     transition: top 0.4s, transform .25s .25s;
     top: 0px;
     transform: rotateZ(45deg);
@@ -294,11 +304,13 @@ nav{
 	font-weight: 900;
 }
 .single-title span{
+	white-space: normal;
 	font-family: Mulish;
 	font-size: 16.5px;
 	color: var(--bs-turquoise);
 }
 .single-title span:first-child{
+	white-space: normal;
 	font-size: 19px;
 }
 .citat{
@@ -310,6 +322,7 @@ nav{
 	color: #000;
 }
 .citat span{
+	white-space: normal;
 	font-size: 40px;
 }
 .citat img{
@@ -577,7 +590,8 @@ nav{
 	margin: 45px;
 	text-align: left;
 }
-.trial-training-title span{
+.trial-training-title .price{
+	white-space: normal;
 	color: #FFF;
 	padding: 5px 10px;
 	background-color: var(--bs-violet2);
@@ -591,7 +605,7 @@ nav{
 	line-height: 35px;
 	margin: 15px 0 20px;
 }
-.trial-training-title h2 font{
+.trial-training-title h2 span{
 	font-size: 45px;
 }
 .trial-training-title p{
@@ -602,6 +616,7 @@ nav{
 }
 .form-group{
 	width: 290px;
+	text-align: center;
 }
 .submit-btn{
 	text-align: center;
@@ -629,7 +644,7 @@ nav{
 	.trial-training-title{margin: 18px;}
 	.submit-btn{margin-top: 12px;}
 	.trial-training-title h2{margin: 10px 0 15px 0; font-size: 35px;}
-	.trial-training-title h2 font{font-size: 40px;}
+	.trial-training-title h2 span{font-size: 40px;}
 	.form-group{width: 245px;}
 }
 @media (min-width: 992px){
@@ -643,7 +658,7 @@ nav{
 }
 @media (max-width: 768px){
 	.parallelogram .col-md-8{display: none;}
-	.trial-training-title h2 font{font-size: unset;}
+	.trial-training-title h2 span{font-size: unset;}
 	.parallelogram .col-md-3{width: 100%;}
 	.form-group{width: 100%;}
 	.trial-training-title {margin: 35px}
@@ -762,13 +777,13 @@ nav{
 	padding: 80px 0;
 	background-color: var(--bs-turquoise);
 }
-.reviews span{
+.reviews .re-mini-text{
+	white-space: normal;
 	color: var(--bg-white);
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 14.5px;
 	text-align: right;
-
 }
 .reviews h2{
 	margin-top: 5px;
@@ -797,20 +812,20 @@ nav{
 @media (max-width: 992px){
 	.reviews h2{font-size: 25px; line-height: 30px;}
 	.reviews .right{margin-top: 395px;}
-	.reviews span{font-size: 10px;}
+	.reviews .re-mini-text{font-size: 10px;}
 }
 @media (min-width: 768px){
-	.reviews .left font{white-space: normal;}
+	.reviews .left span{white-space: normal;}
 }
 @media (max-width: 768px){
 	.reviews .right{display: none;}
 	.reviews .left{text-align: center;}
 	.reviews h2{font-size: 28px; line-height: 32px;}
-	.reviews span{font-size: 15px;}
+	.reviews .re-mini-text{font-size: 15px;}
 }
 @media (max-width: 511px){
 	.reviews h2{font-size: 25px; line-height: 30px;}
-	.reviews span{font-size: 13px;}
+	.reviews .re-mini-text{font-size: 13px;}
 }
 
 .contacts{
@@ -828,7 +843,8 @@ nav{
 .contact-text{
 	padding-top: 30px;
 }
-.contact-text span{
+.contact-text .co-mini-text{
+	white-space: normal;
 	color: var(--bs-violet2);
 	font-weight: bold;
 	font-size: 20px;
@@ -918,7 +934,7 @@ nav{
   	line-height: 50px;
   	margin-bottom: 40px;
 }
-.last-block-bg h1 font{
+.last-block-bg h1 span{
 	font-size: 71px;
 	font-weight: bold;
 }
@@ -931,7 +947,7 @@ nav{
 }
 @media (max-width: 355px){
 	.last-block-bg h1{font-size: 35px;}
-	.last-block-bg h1 font{font-size: 60.2px}
+	.last-block-bg h1 span{font-size: 60.2px}
 }
 
 
@@ -959,6 +975,7 @@ footer{
 	color: #FFF;
 }
 .footer hr{
+	margin: 15px auto 0;
 	color: #FFF;
 	width: 300px;
 }

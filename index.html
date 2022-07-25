@@ -1,16 +1,29 @@
-<html>
+<!DOCTYPE html>
+<html lang="ru">
 	<head>
-		<title></title>
-		<meta name="description" content="">
-		<meta name="keywords" content="">
+		<title>Тонус Клуб - м. Университет</title>
+		<meta name="description" content="описание">
+		<meta name="keywords" content="ключевые слова">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;600;900&display=swap" rel="stylesheet">
+
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/main.css" />
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
+
+		<link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
+		<link rel="manifest" href="img/fav/site.webmanifest">
+		<link rel="mask-icon" href="img/fav/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="img/fav/favicon.ico">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-config" content="img/fav/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
 	</head>
 	<body>
 		<!-- <div class="preloader">
@@ -19,28 +32,32 @@
 		<section class="single-page">
 			<header>
 				<nav>
-					<ul class="pc-menu">
+					<div class="pc-menu">
 						<div>
-							<li><a href="">Услуги</a></li>
-							<li><a href="">О студии</a></li>
+							<ul>
+								<li><a href="#services">Услуги</a></li>
+								<li><a href="#about">О студии</a></li>
+							</ul>
 						</div>
-						<img src="img/icons/logo.png">
+						<img alt="Логотип" src="img/icons/logo.png">
 						<div>
-							<li><a href="">Отзывы</a></li>
-							<li><a href="">Контакты</a></li>
+							<ul>
+								<li><a href="#reviews">Отзывы</a></li>
+								<li><a href="#contacts">Контакты</a></li>
+							</ul>
 						</div>
-					</ul>
+					</div>
 					<div class="mobile-menu">
-						<img src="img/icons/logo.png">
+						<img alt="Логотип" src="img/icons/logo.png">
 						<div id="nav-icon6">
 						    <span></span>
 						</div> 
 						<div id="menu-list" class="menu-list">
 							<ul>
-								<li><a href="">Услуги</a></li> 
-								<li><a href="">О студии</a></li> 
-								<li><a href="">Отзывы</a></li> 
-								<li><a href="">Контакты</a></li>
+								<li><a href="#services">Услуги</a></li> 
+								<li><a href="#about">О студии</a></li> 
+								<li><a href="#reviews">Отзывы</a></li> 
+								<li><a href="#contacts">Контакты</a></li>
 							</ul>
 						</div> 
 					</div>
@@ -54,7 +71,7 @@
 				</div>
 				<div class="citat">
 					<!-- <span><img src="img/icons/quotation-mark.png"></span> -->
-					<p><font>со специальными «умными» тренажерами</font><br><font>и комплексом омолаживающих </font><br><font>приятных процедур</font></p>
+					<p><span>со специальными «умными» тренажерами</span><br><span>и комплексом омолаживающих </span><br><span>приятных процедур</span></p>
 				</div>
 				<div class="contacts">
 					<!-- <p>Мы ждем вас:</p>
@@ -79,7 +96,7 @@
 				</div>
 			</div>
 		</section> -->
-		<section class="services">
+		<section id="services" class="services">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 services-title">
@@ -173,28 +190,28 @@
 					<div class="col-md-5 serv-icons-block">
 						<div class="serv-icons-list">
 							<div class="serv-icon">
-								<img src="img/icons/scale.png">
+								<img alt="Замер фигуры" src="img/icons/scale.png">
 								<ul>
 									<li>ИЗБАВЛЕНИЕ ОТ ЛИШНЕГО ВЕСА</li>
 									<li>КОРРЕКЦИЯ ФИГУРЫ</li>
 								</ul>
 							</div>
 							<div class="serv-icon">
-								<img src="img/icons/dress2.png">
+								<img alt="Платье" src="img/icons/dress2.png">
 								<ul>
 									<li>УСТРАНЕНИЕ ЦЕЛЛЮЛИТА</li>
 									<li>РАССЛАБЛЕНИЕ И СНЯТИЕ СТРЕССА</li>
 								</ul>
 							</div>
 							<div class="serv-icon">
-								<img src="img/icons/baby.png">
+								<img alt="Ребенок" src="img/icons/baby.png">
 								<ul>
-									<li>СОХРАНЕНИЕ МОЛОДОСТИ <font>И ТОНУСА</font></li>
+									<li>СОХРАНЕНИЕ МОЛОДОСТИ <span>И ТОНУСА</span></li>
 									<li>ВОССТАНОВЛЕНИЕ ПОСЛЕ РОДОВ</li>
 								</ul>
 							</div>
 							<div class="serv-icon">
-								<img src="img/icons/hearts.png">
+								<img alt="Сердце" src="img/icons/hearts.png">
 								<ul>
 									<li>ПРОФИЛАКТИКА ВАРИКОЗА</li>
 									<li>СНЯТИЕ ОТЕЧНОСТИ</li>
@@ -205,6 +222,7 @@
 				</div>
 			</div>
 		</section>
+
 		<section class="trial-training">
 			<div class="container">
 				<div class="row">
@@ -214,21 +232,21 @@
 								<div class="col-md-1"></div>
 								<div class="col-md-3">
 									<div class="trial-training-title">
-										<span>От 500 руб.</span>
-										<h2>Пробное <font>занятие</font></h2>
+										<span class="price">От 500 руб.</span>
+										<h2>Пробное <span>занятие</span></h2>
 										<form action="#" class="contact-form form">
 						                    <input type="hidden" name="project_name" value="ТонусСтудия">
 						                    <input type="hidden" name="admin_email" value="mail@4e1.ru">
 						                    <input type="hidden" name="form_subject" value="Пробная тренировка">
 
 						                    <div class="form-group">
-						                      <input type="name" name="Имя" onkeypress="noDigits(event)" class="form-control" required placeholder="Ваше имя*">
+						                      <input type="text" name="Имя" onkeypress="noDigits(event)" class="form-control" required placeholder="Ваше имя*" value="">
 						                    </div>
 						                    <div class="form-group">
-						                      <input type="phone" name="Телефон" onkeypress="noABC(event)" class="form-control input-number" required placeholder="Ваш номер телефона*">
+						                      <input type="tel" name="Телефон" onkeypress="noABC(event)" class="form-control input-number" required placeholder="Ваш номер телефона*" value="">
 						                    </div>
 						                    <div class="form-group">
-						                    	<select type="select" name="Тип тренировки" class="form-control" required >
+						                    	<select name="Тип тренировки" class="form-control" required >
 						                    		<option value="" disabled selected>Выберите услгу</option>
 						                    		<option>Smart-тренировка - 500 руб.</option>
 						                    		<option>EMS-тренировка - стоимость</option>
@@ -237,7 +255,7 @@
 						                    	</select>
 						                    </div>
 						                    <div class="form-group">
-						                      <center><input type="submit" value="Оставить заявку" class="submit-btn"></center>
+						                      <input type="submit" value="Оставить заявку" class="submit-btn">
 						                    </div>
 						                  </form>
 						                  <div class="container-message">
@@ -257,7 +275,7 @@
 			</div>
 		</section>
 
-		<section class="why-us-blocks">
+		<section id="about" class="why-us-blocks">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 why-us-title">
@@ -266,37 +284,37 @@
 					</div>
 					<div class="why-us-list">
 						<div class="row no-gutter why-us-js-list">
-							<div id="arrow-0" class="col-md-3 why-us arrow arrow-right">
+							<div id="arrow-0" class="col-md-3 why-us-block why-us arrow arrow-right">
 								<div class="why-text">
 									<h5>Хорошая компания</h5>
 									<p>Работаем только с женщинами и понимаем все особенности и тонкости женского организма на 100%.</p>
 								</div>
 							</div>
-							<div class="col-md-3">
+							<div class="col-md-3 why-us-block">
 								<div style="background-image: url(img/index/why-1.jpg);" class="why-us-img"> </div>
 							</div>
-							<div id="arrow-1" class="col-md-3 why-us arrow arrow-right">
+							<div id="arrow-1" class="col-md-3 why-us-block why-us arrow arrow-right">
 								<div class="why-text">
 									<h5>Без стеснения</h5>
 									<p>Добродушная семейная атмосфера, позволяющая полностью расслабиться и уделить время для себя</p>
 								</div>
 							</div>
-							<div class="col-md-3">
+							<div class="col-md-3 why-us-block">
 								<div style="background-image: url(img/index/why-2.jpg);" class="why-us-img"> </div>
 							</div>
-							<div class="col-md-3">
+							<div class="col-md-3 why-us-block">
 								<div style="background-image: url(img/index/why-3.jpg);" class="why-us-img"> </div>
 							</div>
-							<div id="arrow-2" class="col-md-3 why-us arrow arrow-left">
+							<div id="arrow-2" class="col-md-3 why-us why-us-block arrow arrow-left">
 								<div class="why-text">
 									<h5>Мы слушаем вас!</h5>
 									<p>Постоянная обратная связь от клиентов позволяет улучшаться и создавать лучшие фитнес решения для женщин нашего города</p>
 								</div>
 							</div>
-							<div class="col-md-3">
+							<div class="col-md-3 why-us-block">
 								<div style="background-image: url(img/index/why-4.jpg);" class="why-us-img"> </div>
 							</div>
-							<div id="arrow-3" class="col-md-3 why-us arrow arrow-left">
+							<div id="arrow-3" class="col-md-3 why-us-block why-us arrow arrow-left">
 								<div class="why-text">
 									<h5>Правильные идеалы</h5>
 									<p>Вы сами выбираете свой ориентир и двигаетесь к нему в комфортном темпе</p>
@@ -308,12 +326,12 @@
 			</div>
 		</section>
 
-		<section class="reviews">
+		<section id="reviews" class="reviews">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3 left">
-						<span>Ваш отзыв важен для нас!</span>
-						<h2>Оставьте отзыв <font>о нашем клубе</font></h2>
+						<span class="re-mini-text">Ваш отзыв важен для нас!</span>
+						<h2>Оставьте отзыв <span>о нашем клубе</span></h2>
 					</div>
 					<div class="col-md-6">
 						<iframe src="https://yandex.ru/maps-reviews-widget/1367480169?comments"></iframe>
@@ -326,15 +344,15 @@
 			</div>
 		</section>
 
-		<section class="contacts">
+		<section id="contacts" class="contacts">
 			<div class="container">
 				<div class="row contacts-js">
 					<div class="col-md-6 pc-map contact-map">
-						<iframe src="https://yandex.ru/map-widget/v1/-/CCUNr0UvSD" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+						<iframe src="https://yandex.ru/map-widget/v1/-/CCUNr0UvSD"></iframe>
 					</div>
 					<div class="col-md-6 ct-l contact-text">
-						<span>Есть вопросы?</span>
-						<h2>Не нашли, <font style="">что искали</font>?</h2>
+						<span class="co-mini-text">Есть вопросы?</span>
+						<h2>Не нашли, <span style="">что искали</span>?</h2>
 						<p>Позвоните нам и задайте интересующие вас вопросы!</p>
 						<div class="contacts-blocks">
 							<div class="contact-block">
@@ -350,7 +368,7 @@
 						</div>
 					</div>
 					<div class="col-md-6 mb-map contact-map">
-						<iframe src="https://yandex.ru/map-widget/v1/-/CCUNr0UvSD" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+						<iframe src="https://yandex.ru/map-widget/v1/-/CCUNr0UvSD"></iframe>
 					</div>
 				</div>
 			</div>
@@ -361,7 +379,7 @@
 				<div class="row no-gutter">
 					<div class="centered">
 						<div class="last-block-text">
-							<h1>Приведи себя<br><font>в Тонус</font></h1>
+							<h1>Приведи себя<br><span>в Тонус</span></h1>
 						</div>
 					</div>
 				</div>
@@ -372,25 +390,25 @@
 			<div class="container">
 				<div class="row">
 					<div class="footer-logo">
-						<img src="img/icons/logo.png">
+						<img alt="Логотип" src="img/icons/logo.png">
 					</div>
 					<div class="footer">
 						<p>©<script>document.write(new Date().getFullYear());</script> ТОНУС СТУДИЯ - Мастерская вашего тела</p>
-						<center><hr></center>
+						<hr>
 						<ul class="footer-social">
-							<li><a href=""><img src="img/icons/vk.png"></a></li>
-							<li><a href=""><img src="img/icons/ok.png"></a></li>
-							<li><a href=""><img src="img/icons/instagram.png"></a></li>
-							<li><a href=""><img src="img/icons/whatsapp.png"></a></li>
-							<li><a href=""><img src="img/icons/telegram.png"></a></li>
+							<li><a href=""><img alt="ВКонтакте" src="img/icons/vk.png"></a></li>
+							<li><a href=""><img alt="Одноклассник" src="img/icons/ok.png"></a></li>
+							<li><a href=""><img alt="Instagram" src="img/icons/instagram.png"></a></li>
+							<li><a href=""><img alt="What's app" src="img/icons/whatsapp.png"></a></li>
+							<li><a href=""><img alt="Telegram" src="img/icons/telegram.png"></a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</footer>
-	</body>
 
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery-migrate-3.0.1.min.js"></script>
-	<script src="js/main.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery-migrate-3.0.1.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
 </html>
