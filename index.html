@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-		<title>Тонус Клуб - м. Университет</title>
+		<title>Тонус Студия - метро Университет</title>
 		<meta name="description" content="описание">
 		<meta name="keywords" content="ключевые слова">
 		<meta charset="utf-8" />
@@ -10,6 +10,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;600;900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600;900&display=swap" rel="stylesheet">
 
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/main.css" />
@@ -27,7 +28,7 @@
 	</head>
 	<body>
 		<div class="preloader">
-    		<h2 class="animate">Загрузка</h2>
+    		<div class="lds-ring"><div></div><div></div><div></div><div></div></div>
 		</div>
 
 		<section class="single-page">
@@ -64,14 +65,17 @@
 					</div>
 				</nav>
 			</header>
-			<div class="container center">
-				<div class="single-title">
-					<span>спортивно оздоровительный</span>
-					<h1>женский <br>центр</h1>
-					<span>красоты и здоровья</span>
-				</div>
-				<div class="citat">
-					<p><span>со специальными «умными» тренажерами</span><br><span>и комплексом омолаживающих </span><br><span>приятных процедур</span></p>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7">
+						<div class="single-title">
+							<h1>Женский центр красоты<br>и здоровья с <span>«умными»</span><br>тренажерами</h1>
+							<a href="#trial-training">Пробное занятие</a>
+						</div>
+					</div>
+					<div class="col-md-5">
+						<div id="bg-img" class="bg-img"> </div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -203,7 +207,7 @@
 			</div>
 		</section>
 
-		<section class="trial-training">
+		<section id="trial-training" class="trial-training">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">

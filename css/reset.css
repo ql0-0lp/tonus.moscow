@@ -51,7 +51,7 @@ a:not([class]) {
   color: #000;
 }
 a:hover{
-  color: #C9C9C9;
+  color: #FFF;
 }
 
 /* Упрощаем работу с изображениями */

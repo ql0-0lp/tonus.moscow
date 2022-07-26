@@ -15,6 +15,21 @@ $(document).ready(function(){
 
 });
 
+var imgCount = 2;
+$('#bg-img').css('background-image', `url(img/index/single-bg-1.png)`);
+setTimeout(function() {$('#bg-img').css('opacity', `0`);}, 2900);
+setInterval(() => {
+
+  if (imgCount > 2) {
+    imgCount = 1;
+  }
+  setTimeout(function() {$('#bg-img').css('opacity', `0`);}, 3000);
+  $('#bg-img').css('background-image', `url(img/index/single-bg-${imgCount}.png)`);
+  $('#bg-img').css('opacity', `1`);
+  imgCount++;
+
+}, 4000);
+
 $(document).ready(function() {
   //E-mail Ajax Send
   $("form").submit(function() { //Change
@@ -91,20 +106,9 @@ $('a[href^="#"]').bind('click.smoothscroll',function (e) {
   var target = this.hash,
   $target = $(target);
   $('html, body').stop().animate({
-    'scrollTop': $target.offset().top
-  }, 500, 'swing', function () {
-    window.location.hash = target;
-  });
-});
-
-$('a[href^="#"]').bind('click.smoothscroll',function (e) {
-  e.preventDefault();
-  var target = this.hash,
-  $target = $(target);
-  $('html, body').stop().animate({
-    'scrollTop': $target.offset().top
-  }, 500, 'swing', function () {
-    window.location.hash = target;
+    'scrollTop': $target.offset().top-100
+  }, 1000, 'swing', function () {
+    window.location.hash = target-100;
   });
 });
 
