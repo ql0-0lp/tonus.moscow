@@ -319,7 +319,6 @@ nav{
 	text-transform: uppercase;
 	font-weight: bold;
 	margin-bottom: 20px;
-
 }
 .single-title h1:before{
 	content: '';
@@ -357,6 +356,29 @@ nav{
 	width: 100%;
 	height: 480px;
 	transition: opacity 1s;
+}
+@media (max-width: 1200px){
+	.single-title h1{font-size: 50px;}
+	.single-title h1:before{height: 7px;}
+	.bg-img{height: 390px;}
+}
+@media (max-width: 992px) {
+	.bg-img{display: none;}
+	.single-title h1{font-size: 60px;}
+	.single-title h1:before{height: 10px;}
+
+}
+@media (max-width: 768px) {
+	.bg-img{display: none;}
+	.single-title h1{font-size: 45px;}
+	.single-title h1:before{height: 5px;}
+	.single-title{position: relative;}
+	.single-page .col-md-7{width: 100%;}
+}
+@media (max-width: 540px){
+	.single-title h1{font-size: 8vw;}
+	.single-title h1:before{height: 1vw; margin-bottom: 2vw;}
+
 }
 
 .services{
@@ -440,6 +462,9 @@ nav{
 }
 @media (max-width: 768px){
 	.services-title {padding: 0!important;}
+}
+@media (max-width: 500px){
+	.serv-icon ul{list-style: square;}
 }
 
 .modal {
@@ -711,7 +736,7 @@ nav{
 	.why-us-list .col-md-3{width: 50%;}
 }
 @media (max-width: 992px){
-	.why-us-title{padding: 0!important;}
+	.why-us-title{padding: 0 10px!important;}
 }
 @media (max-width: 501px){
 	.why-us-img{height: 400px; width: 100%;}
@@ -765,11 +790,11 @@ nav{
 @media (max-width: 768px){
 	.reviews .right{display: none;}
 	.reviews .left{text-align: center;}
-	.reviews h2{font-size: 28px; line-height: 32px;}
+	.reviews h2{font-size: 28px; line-height: 32px; margin-bottom: 40px;}
 	.reviews .re-mini-text{font-size: 15px;}
 }
 @media (max-width: 511px){
-	.reviews h2{font-size: 25px; line-height: 30px;}
+	.reviews h2{font-size: 25px; line-height: 30px; margin-top: 5px;}
 	.reviews .re-mini-text{font-size: 13px;}
 }
 
@@ -833,18 +858,20 @@ nav{
 	.contact-block a{font-size: 16px;}
 	.contact-map iframe{height: 360px;}
 }
-@media (max-width: 501px){
-	.contacts{margin-top: 60px;}
+@media (max-width: 768px){
 	.mb-map{display: block;}
 	.pc-map{display: none;}
+}
+@media (max-width: 501px){
+	.contacts{margin-top: 60px;}
 	.contact-text h2{font-size: 30px;line-height: 27px;}
 	.contact-text p{font-size: 18px; ;line-height: 18px;}
-	.contact-block p{font-size: 16px; line-height: 20px;}
+	.contact-block p{font-size: 16px; line-height: 24px;}
 	.contact-block a{font-size: 16px; line-height: 20px;}
 	.contact-map iframe{height: 300px;}
 }
 @media (max-width: 351px){
-	.contact-block p{font-size: 14px; line-height: 18px;}
+	.contact-block p{font-size: 14px; line-height: 24px;}
 	.contact-block a{font-size: 14px; line-height: 18px;}
 }
 
@@ -915,6 +942,7 @@ footer{
 	justify-content: center;
 }
 .footer p{
+	font-size: 15px;
 	text-align: center;
 	justify-content: center;
 	color: #FFF;
