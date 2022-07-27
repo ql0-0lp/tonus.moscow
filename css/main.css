@@ -19,8 +19,7 @@
 }
 
 :root{
-	--bs-violet: #745C8B;
-	--bs-violet2: #9B5CCA;
+	--bs-orange: #745C8B;
 	--bs-turquoise: #62BAB8;
 	--bs-yellow: #E4AD6B;
 	--bs-orange: #C4772D;
@@ -34,7 +33,7 @@ body::-webkit-scrollbar-track {
   	background: #E5E5EC;        
 }
 body::-webkit-scrollbar-thumb {
-	background-color: var(--bs-violet);           
+	background-color: var(--bs-orange);           
 }
 
 .centered{
@@ -138,7 +137,7 @@ nav{
 	height: 92px;
 	z-index: 999;
 	width: 100%;
-	background-color: var(--bg-white);
+	background-color: #e0e0e5;
 }
 .pc-menu{
 	display: flex;
@@ -173,7 +172,7 @@ nav{
 	line-height: 1;
 }
 .pc-menu div li a:hover{
-	color: var(--bs-violet2);
+	color: var(--bs-orange);
 }
 .pc-menu div li a:after{
 	display: block;
@@ -181,7 +180,7 @@ nav{
 	margin-top: 5px;
 	height: 2px;
 	width: 0%;
-	background-color: var(--bs-violet2);
+	background-color: var(--bs-orange);
 	transition: width 0.4s ease-in-out;
 }
 .pc-menu div li a:hover:after,
@@ -211,13 +210,13 @@ nav{
     float: right;
     cursor: pointer;
     padding: 10px;
-    margin: 25px 20px 0 0;
+    margin: 21px 20px 0 0;
 }
 #nav-icon6 span {
     height: 4px;
     width: 30px;
     white-space: normal;
-    background-color: var(--bs-violet);
+    background-color: var(--bs-orange);
     border-radius: 20px;
     position: absolute;
     transition-duration: .25s;
@@ -230,7 +229,7 @@ nav{
     top: -8px;
     height: 4px;
     width: 30px;
-    background-color: var(--bs-violet);
+    background-color: var(--bs-orange);
     content: "";
     border-radius: 20px;
     transition-duration: .25s;
@@ -243,7 +242,7 @@ nav{
     top: 8px;
     height: 4px;
     width: 30px;
-    background-color: var(--bs-violet);
+    background-color: var(--bs-orange);
     content: "";
     border-radius: 20px;
     transition-duration: .25s;
@@ -307,6 +306,9 @@ nav{
 		height: 70px;
 	}
 }
+@media (max-width: 501px){
+	.single-page{height: 200vw;}
+}
 
 .single-title{
 	margin-top: 300px;
@@ -326,6 +328,7 @@ nav{
     height: 10px;
     background: var(--bs-orange);
     width: 120px; 
+    border-radius: 5px;
 	transition: 1s;
 }
 .single-title h1:hover:before {
@@ -363,22 +366,23 @@ nav{
 	.bg-img{height: 390px;}
 }
 @media (max-width: 992px) {
-	.bg-img{display: none;}
-	.single-title h1{font-size: 60px;}
+	.bg-img{margin-top: -50px; width: 60%; height: 420px; float: right;}
+	.single-title h1{font-size: 55px;}
 	.single-title h1:before{height: 10px;}
+	.single-page .col-md-7{width: 100%;}
+	.single-title{position: relative; margin-top: 150px;}
+	.single-page .col-md-5{width: 100%;}
 
 }
 @media (max-width: 768px) {
-	.bg-img{display: none;}
+	.bg-img{margin: 20px auto; width: 80%; height: 420px; float: none;}
 	.single-title h1{font-size: 45px;}
 	.single-title h1:before{height: 5px;}
-	.single-title{position: relative;}
-	.single-page .col-md-7{width: 100%;}
 }
 @media (max-width: 540px){
 	.single-title h1{font-size: 8vw;}
 	.single-title h1:before{height: 1vw; margin-bottom: 2vw;}
-
+	.bg-img{margin: 50px auto; width: 80%; height: 77.5vw; float: none;}
 }
 
 .services{
@@ -420,7 +424,7 @@ nav{
 	cursor: pointer;
 	font-size: 15px;
 	padding: 5px 10px;
-	background-color: var(--bs-violet2);
+	background-color: var(--bs-orange);
 	border-radius: 10px;
 }
 .serv-icon{
@@ -549,7 +553,7 @@ nav{
 	background-color: var(--bs-turquoise);
 }
 .bg-line{
-	background-color: var(--bs-violet2);
+	background-color: var(--bs-orange);
 	z-index: -1;
 	position: absolute;
 	margin-top: 50px;
@@ -564,7 +568,7 @@ nav{
 	white-space: normal;
 	color: #FFF;
 	padding: 5px 10px;
-	background-color: var(--bs-violet2);
+	background-color: var(--bs-orange);
 	border-radius: 20px;
 	font-weight: bold;
 }
@@ -593,7 +597,7 @@ nav{
 	text-decoration: none;
 	color: #FFF;
 	font-size: 19px;
-	background-color: var(--bs-violet2);
+	background-color: var(--bs-orange);
 	border-radius: 5px;
 	border: 0;
 	margin-top: 20px;
@@ -815,7 +819,7 @@ nav{
 }
 .contact-text .co-mini-text{
 	white-space: normal;
-	color: var(--bs-violet2);
+	color: var(--bs-orange);
 	font-weight: bold;
 	font-size: 20px;
 }
@@ -849,7 +853,7 @@ nav{
 }
 .contact-block p:first-child{
 	font-weight: bold;
-	color: var(--bs-violet2);
+	color: var(--bs-orange);
 }
 @media (max-width: 992px) and (min-width: 768px){
 	.contact-text h2{font-size: 35px;line-height: 32px;}
@@ -914,7 +918,7 @@ nav{
 	color: #FFF;
 	font-size: 18px;
 	padding: 8px 15px;
-	background-color: var(--bs-violet2);
+	background-color: var(--bs-orange);
 	border-radius: 0px;
 }
 @media (max-width: 355px){
