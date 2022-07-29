@@ -15,20 +15,28 @@ $(document).ready(function(){
 
 });
 
-var imgCount = 2;
-$('#bg-img').css('background-image', `url(img/index/single-bg-1.png)`);
-setTimeout(function() {$('#bg-img').css('opacity', `0`);}, 2900);
-setInterval(() => {
+$(window).on("scroll", function() {
+            var nav = $("nav");
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+  
+                if (scroll <= 700) {
+                  nav.css('transition', 'background 0.5s')
+                } else {
+                  nav.css('transition', 'none')
+                }
 
-  if (imgCount > 2) {
-    imgCount = 1;
-  }
-  setTimeout(function() {$('#bg-img').css('opacity', `0`);}, 3000);
-  $('#bg-img').css('background-image', `url(img/index/single-bg-${imgCount}.png)`);
-  $('#bg-img').css('opacity', `1`);
-  imgCount++;
+                if (scroll >= 155) {
+                    nav.css('background', '#000')
+                } else {
+                    nav.css('background', 'none')
+                }
+            });
+        });
 
-}, 4000);
+$(document).ready(function(){
+    $(this).scrollTop(0);
+});
 
 $(document).ready(function() {
   //E-mail Ajax Send
@@ -65,42 +73,6 @@ $(function() {
     });
 });
 
-function lockScroll(){
-  if (true  ) {}
-    $html = $('html'); 
-    $body = $('body'); 
-    $mobOv = $('#mobile-overlay');
-
-    if ($body.css('overflow') == 'hidden') {
-      $body.css({'margin-right': marginR,'margin-bottom': marginB});
-      $body.css('overflow', $body.data('previous-overflow'));
-      $mobOv.css('display', 'none');
-      var scrollPosition = $html.data('scroll-position');
-      window.scrollTo(scrollPosition[0], scrollPosition[1]);    
-
-      $body.css({'margin-right': 0, 'margin-bottom': 0});
-    }
-    else{
-      var initWidth = $body.outerWidth();
-      var initHeight = $body.outerHeight();
-
-      var scrollPosition = [
-          self.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft,
-          self.pageYOffset || document.documentElement.scrollTop  || document.body.scrollTop
-      ];
-      $html.data('scroll-position', scrollPosition);
-      $body.data('previous-overflow', $html.css('overflow'));
-      $body.css('overflow', 'hidden');
-      $mobOv.css('display', 'block');
-
-      window.scrollTo(scrollPosition[0], scrollPosition[1]);   
-
-      var marginR = $body.outerWidth()-initWidth;
-      var marginB = $body.outerHeight()-initHeight; 
-    }
-    
-};
-
 $('a[href^="#"]').bind('click.smoothscroll',function (e) {
   e.preventDefault();
   var target = this.hash,
@@ -111,7 +83,6 @@ $('a[href^="#"]').bind('click.smoothscroll',function (e) {
     window.location.hash = target-100;
   });
 });
-
 
 function noDigits(event) {
   if ("1234567890-/.,?<>|!#@^:;()".indexOf(event.key) != -1)
