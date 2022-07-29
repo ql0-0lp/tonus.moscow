@@ -178,6 +178,9 @@ nav{
 .pc-menu div:first-child li a:hover,active{
 	color: var(--bg-white);
 }
+.pc-menu div:first-child li a:after{
+	background-color: var(--bg-white);
+}
 .pc-menu div:first-child li:last-child{
 	margin: 25px 80px 0 60px;
 }
@@ -187,21 +190,21 @@ nav{
 .pc-menu div:last-child li a:hover,active{
 	color: var(--light-turquoise);
 }
+.pc-menu div:last-child li a:after{
+	background-color: var(--light-turquoise);
+}
 .pc-menu div li a{
 	font-weight: bold;
 	text-decoration:none;
 	display: inline-block;
 	line-height: 1;
 }
-.pc-menu div li a:hover{
-	}
 .pc-menu div li a:after{
 	display: block;
 	content: "";
 	margin-top: 5px;
 	height: 2px;
 	width: 0%;
-	background-color: var(--light-turquoise);
 	transition: width 0.4s ease-in-out;
 }
 .pc-menu div li a:hover:after,
@@ -359,7 +362,7 @@ nav{
 	transition: ease-out 1s;
 }
 .single-title span{
-	color: var(--bs-turquoise);
+	color: #72D3D1;
 }
 .single-title a{
 	font-size: 20px;
@@ -601,6 +604,20 @@ nav{
 }
 .container-message{
 	display: none;
+	background-color: var(--bs-turquoise);
+    width: 150%;
+    border-radius: 20px;
+}
+.container-message h2{
+	font-size: 30px;
+    line-height: 25px;
+    color: #FFF;
+    margin: 0!important;
+    padding: 15px;
+}
+.container-message h4{
+	font-size: 16px;
+    padding: 15px;
 }
 .form-group{
 	width: 290px;
@@ -650,6 +667,7 @@ nav{
 	.parallelogram .col-md-3{width: 100%;}
 	.form-group{width: 100%;}
 	.trial-training-title {margin: 35px}
+	.container-message{width: 100%;}
 }
 @media (max-width: 433px){
 	.trial-training-title h2{font-size: 28px}
