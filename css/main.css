@@ -38,7 +38,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (min-width: 1500px){
-  body{zoom: 103%}
+  body{zoom: 108%}
 }
 @media (min-width: 1600px){
   body{zoom: 115%}
@@ -560,6 +560,7 @@ nav{
 	padding: 20px!important;
 }
 .modal-text p, li{
+	color: #000;
 	font-size: 17px;
 	margin-top: 10px;
 }
@@ -584,6 +585,9 @@ nav{
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+@media (max-width: 768px){
+	.modal-content .second ul{margin-top: -17px;}
 }
 
 .partners{
